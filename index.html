@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -66,10 +65,25 @@
             <P>메가존솔루션즈는 기업 클라우드 인프라 혁신과 성장을 위한 최고의 파트너로 최선을 다하겠습니다.</P>
         </div>
         <div class="map">
-            <!-- * 카카오맵 - 지도퍼가기 -->
-            <!-- 1. 지도 노드 -->
-            <div id="daumRoughmapContainer1630025742447" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-</script>    
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1630047203355" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1630047203355",
+		"key" : "275yj",
+		"mapWidth" : "100%",
+		"mapHeight" : "360"
+	}).render();
+</script>
         </div>
         <table class="contact__container">
             <tr>
@@ -100,18 +114,26 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div>
-            <a href="#"> <img src="" alt=""> </a>
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+    <footer id="footer">
+        <div class="footer__container sec">
+            <a href="#"> <img src="img/logo2.png" alt=""> </a>
+            <p>메가존솔루션즈㈜          대표이사 : 이주완          사업자번호: TBD          통신판매업신고: TBD</p>
+            <p>서울 강남구 테헤란로26길 14 대세빌딩 7층</p>
+            <p>전화: 1644-2243        이메일: cloud@megazonesolutions.com        Copyright 2021 © MEGAZONESOLUTIONS CORP. All Right Reserved.</p>
+            <ul class="fSite">Family Site
+                <li><a href="https://www.mz.co.kr/ ">MEGAZONE</a> </li>
+                <li><a href="https://www.mz.co.kr/ ">MEGAZONE CLOUD
+                </a></li>
+                <li><a href="https://www.mz.co.kr/ ">Hosting Kr
+                </a></li>
+                <li><a href="https://www.mz.co.kr/ ">Pentacle
+                </a></li>
+                <li><a href="https://www.mz.co.kr/ ">Indigo
+                </a></li>
+                <li><a href="https://www.mz.co.kr/ ">Cloudclass
+                </a></li>
+                <li><a href="https://www.mz.co.kr/ ">Carrer Portal
+                </a></li>
             </ul>
         </div>
     </footer>

@@ -10,6 +10,7 @@
     --font-large: 40px;
     --font-medium: 30px;
     --font-regular: 20px;
+    --font-small: 16px;
 
     /* Font weight */
     --weight-bold: 700;
@@ -159,6 +160,29 @@
       padding: 15px 0 15px 37px;
       background-color: var(--color-white);
       
+    }
+
+    /* Footer */
+    #footer {
+      width: 100%;
+      color: var(--color-white);
+      background-color: var(--color-black);
+    }
+
+    .footer__container {
+      padding: 150px 0 140px 0;
+    }
+
+    .footer__container a {
+      color: var(--color-white);
+    }
+
+    .footer__container ul {
+      cursor: pointer;
+    }
+
+    .fSite li{
+      display: none;
     }
 
 
