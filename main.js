@@ -54,4 +54,10 @@ $( document ).ready( function() {
 $(".fSite").click(function () { 
     $(this).toggleClass("on");
 });
+
+$( function() {
+    $( ".navbar_toggleBtn" ).on( "click", function() {
+      $( ".nav__menu" ).toggleClass( "open", 1000 );
+    });
+  } );
     
